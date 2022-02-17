@@ -7,12 +7,16 @@ const App = () => {
   const increaseNumber = () => {
     setCounter(counter + 1);
   };
+  const decreaseNumber = () => {
+    setCounter(counter - 1);
+  };
 
   return (
     <div>
-      <p>This will be counter app without styling.</p>
+      <p>Basic Increase and Decrease the number.</p>
       <p>{counter}</p>
       <button onClick={increaseNumber}>Increase</button>
+      <button onClick={decreaseNumber}>Decrease</button>
     </div>
   );
 };
